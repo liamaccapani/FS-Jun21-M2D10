@@ -17,8 +17,12 @@ h5 {
 }
 
 .subtitle-container {
-    border-bottom: 1px solid rgb(102, 102, 102);
+    border-bottom: 1px solid rgba(102, 102, 102, 0.713);
     margin-bottom: 1rem;
+}
+
+.card-body {
+    background-color: rgb(232, 232, 232);
 }
 
 .purple-discount{
@@ -42,9 +46,12 @@ h5 {
     overflow: hidden;
 }
 
-hr.border {
-    border: 1px solid rgb(102, 102, 102);
+.galaxy-text-logo-container {
+    border-top: 1px solid rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(102, 102, 102);
 }
+
+
 
 .galaxy-logo-text img {
     width: 50px; 
