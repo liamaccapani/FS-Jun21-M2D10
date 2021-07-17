@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Gog.com</title>
+    <title>GOG.com</title>
   </head>
 
   <body>
-    <!--NAVBAR icons without links-->
+    <!--NAVBAR icons without links; icons in smaller viewport to be fixed-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="https://www.gog.com/" target="_blank">
@@ -182,20 +182,23 @@
 
     <!--CARDS discount position to be fixed-->
     <div class="container-sm-fluid container-lg mt-3 mt-md-4 px-1 px-lg-0">
-        <div class="row row-cols-2 row-cols-lg-4 m-n1"> <!--mn-1-->
+        <div class="row row-cols-2 row-cols-md-4 m-n1"> <!--mn-1-->
             <div class="col mb-2 p-1"> <!--COL 1-->
                 <div class="card h-100">
                     <img src="assets/tile (1).jpg" class="card-img-top img-fluid" alt="game1">
                     <div class="card-body">
                       <p class="card-text card-title ">Soulsaga</p>
+
                       <!--flex container-->
-                      <div class="infos-container d-flex justify-content-between flex-wrap">
-                         <i class="bi bi-window-sidebar align-self-start"></i>
-                            
-                            <div class="discount text-center">
-                                <p class="purple-discount">-73%</p>
+                      <div class="card-drawer">
+                            <div class="icons-holder d-none d-md-block">
+                                <i class="bi bi-window-sidebar"></i>
                             </div>
-                            <div class="two-prices mt-0">
+                            
+                            <div class="discount-prices">
+                                <span class="discount-purple d-block text-center">-25%</span>
+                            </div>
+                            <div class="two-prices p-relative">
                                 <span class="old-price d-block">99.99$</span>
                                 <span class="new-price d-block">10.99$</span>
                             </div>
@@ -219,11 +222,10 @@
                                 <p class="purple-discount">-73%</p>
                             </div>
                             <div class="two-prices mt-0">
-                                <span class="old-price d-block">99.99$</span>
+                                <span class="old-price d-block pl-1">99.99$</span>
                                 <span class="new-price d-block">10.99$</span>
                             </div>
                         </div>
-
                     </div> <!--card body-->
                 </div> <!--card-->
             </div> <!--col-->
@@ -272,20 +274,21 @@
                 </div> <!--card-->
             </div> <!--col-->
 
-
-
         </div> <!--row-->
     </div>
 
     <!--GOG GALAXY flow and alignment to be fixed-->
-    <div class="galaxy-text-logo-container">
-        <div class="container d-flex flex-wrap flex-md-nowrap justify-content-between my-2">
-            <div class=" galaxy-plan">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic magnam molestias officiis! Provident voluptatem commodi, totam sapiente eius corrupti hic sequi natus! Quis alias necessitatibus rem incidunt, iste aliquam nostrum.</p>
+    <div class="container galaxy-text-logo-container">
+        <div class="row my-2 p-0">
+            <div class="col-12 col-md-8 pt-2 galaxy-plan">
+                <p>We are GOG.COM, the <span class="purple-text">DRM-free</span> home for a 
+                    <span class="purple-text">curated selection</span> of games. This place was 
+                    <span class="purple-text">made for gamers,</span> so make yourself at home.
+                </p>
             </div>
-            <div class="galaxy-logo-text">
-                <img src="/assets/gog-galaxy-logo.png" alt="gog galaxy logo">
-                <p class="d-inline-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sed sequi accusantium cum aliquid nulla excepturi totam quas est nam doloremque harum, aut ullam quo saepe dicta adipisci! Perferendis, voluptatem?</p>
+            <div class="col-12 col-md-4 pt-2 galaxy-logo-text">
+                <img src="https://images.gog-statics.com/0164e24124875d6b41560cbcd29e44bbe9efbbaf0097e694900aabf43677ca08.png" alt="gog galaxy logo">
+                <span class="purple-text">The new GOG Galaxy 2.0</span>
             </div>
         </div>
     </div>
@@ -303,6 +306,7 @@
     <div class="container mt-3 mt-md-4 px-1 px-lg-0">
         <div class="row mx-n1">
             <div class="col-12 col-md-6 mb-2 px-1"> <!--COL 1-->
+                
                 <div class="card h-100">
                     <img src="assets/tile (10).jpg" class="card-img-top img-fluid" alt="game logo">
                     <div class="card-body">
@@ -311,25 +315,31 @@
                 </div> <!--card-->
             </div> <!--col-->
 
-            <div class="col-12 col-md-3 mb-2 px-1"> <!--COL 1-->
-                <div class="card h-100">
-                    <img src="assets/tile (10).jpg" class="card-img-top img-fluid" alt="game logo">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div> <!--card body-->
-                </div> <!--card-->
-            </div> <!--col-->
+            <div class="col-12 col-md-3 mb-2 px-1"> <!--COL 2 MAIN-->
+                <div class="row"> <!--row 2-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/tile (10).jpg" class="card-img-top img-fluid" alt="game logo">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div> <!--card body-->
+                        </div> <!--card-->
+                    </div> <!--col--> 
+                    
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/tile (10).jpg" class="card-img-top img-fluid" alt="game logo">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div> <!--card body-->
+                        </div> <!--card-->
+                    </div> <!--col-->
 
-            <div class="col-12 col-md-3 mb-2 px-1"> <!--COL 1-->
-                <div class="card h-100">
-                    <img src="assets/tile (10).jpg" class="card-img-top img-fluid" alt="game logo">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div> <!--card body-->
-                </div> <!--card-->
-            </div> <!--col-->
+                </div> <!--row 2-->
+            </div> <!--col 2 main-->
+
         </div>  <!--row-->
     </div>
     
@@ -460,28 +470,14 @@
 
 
     <!--NEWS-->
-    <div class="subtitle-container container my-3 px-2 p-lg-0">
+    <div class="container-sm-fluid container-lg subtitle-container my-3 p-lg-0">
         <h5 class="pb-2">
             <i class="bi bi-megaphone-fill pr-2"></i>
             <span>News</span>
         </h5>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <img src="assets/carousel6.jpg" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-6 col-md-3">
-                <img src="assets/carousel6.jpg" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-6 col-md-3">
-                <img src="assets/carousel6.jpg" class="img-fluid" alt="">
-            </div>
-        </div>
-    </div>
+    
 
 
 
@@ -497,3 +493,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!-- > pseudo element carousel items + text and button
+     > navbar icons links + smaller viewport
+     > cards imgs, icons, discount, cart on hover
+     > galaxy section border and layout (alignment)
+     > carousels in other sections
+     > table in discover + layout
+     > news
+     > footer
+     > purple stripe-->
